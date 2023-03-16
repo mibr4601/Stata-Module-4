@@ -5,7 +5,7 @@ Stata Module 4
  
 clear all
 capture log close
-use star.dta
+use /data/star.dta
 generate totalscore = math + listen + wordskill + read
 label variable totalscore "Combined SAT score"
 regress totalscore freelunch
